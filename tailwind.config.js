@@ -19,13 +19,23 @@ module.exports = {
 
       "3xl": "1800px",
     },
+    container: {
+      center: true,
+    },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+      colors: {
+        color: "#f3f3f3"
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        ".container": {
+          width: "min(100% - 2rem, 1300px);",
+        },
+      });
+      
+    },
+  ],
 };
