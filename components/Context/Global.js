@@ -3,11 +3,12 @@
 import { createContext, useContext, useState } from "react"
 
 const GlobalContext = createContext({
-    hamburgerMenu: false
+    hamburgerMenu: false,
 })
 
 export const GlobalContextProvider = ({ children }) => {
     const [hamburgerMenu, setHamburgerMenu] = useState(false)
+
     
     return <GlobalContext.Provider value={{ hamburgerMenu, setHamburgerMenu}}>{children}</GlobalContext.Provider>
 }

@@ -21,7 +21,9 @@
     ],
     "paths": {
       "@/components/*": ["./components/*"],
-      "@/context/*": ["./components/Context/*"]
+      "@/context/*": ["./components/Context/*"],
+      "@/data/*": ["./data/*"]
+
 
     }
   },
