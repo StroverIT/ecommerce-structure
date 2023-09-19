@@ -1,4 +1,4 @@
-const listOfItems = [
+export const listOfItems = [
   "home",
   "password",
   "email",

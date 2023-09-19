@@ -1,17 +1,18 @@
 import React from 'react';
 
+// 
 import GlowBtn from '@/components/Buttons/GlowBtn/GlowBtn';
 import Icons from '@/components/Icons/Icons';
+// Types
+import { InputIcons, listOfItems } from '@/components/Icons/IconInterface';
 
 
 type TContainer = {
     title: string
     paragraph?: string
-    icon?: string
     key?: string
     isLast?: boolean
-
-
+    iconType: (typeof listOfItems)[number]
 }
 // Private information
 const Page = () => {
@@ -23,9 +24,9 @@ const Page = () => {
                     <h3 className='text-lg font'>Данни за профила</h3>
                     
                                 <section className='mt-4'>
-                                    <Container title="Име" icon="email"/>
-                                    <Container title="Email" icon="email"/>
-                                    <Container title="Парола" icon="email" isLast={true}/>
+                                    <Container title="Име" iconType="email"/>
+                                    <Container title="Email" iconType="email"/>
+                                    <Container title="Парола" iconType="email" isLast={true}/>
                                 </section>
 
                 </section>
@@ -38,10 +39,11 @@ export default Page;
 
 
 function Container(props: TContainer) {
+    const {iconType} : InputIcons = props
     return (
             <section className={`flex items-center justify-between py-4 ${!props.isLast ? "border-b border-gray-300" : ""} `}>
                <section className='flex items-center '>
-                    <div className='px-4 text-4xl'><Icons iconType={props.icon}/></div>
+                    <div className='px-4 text-4xl'><Icons iconType={iconType}/></div>
                     <section className='ml-4 text-sm'>
                         <h4>
                             {props.title}:
