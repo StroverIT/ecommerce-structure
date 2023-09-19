@@ -1,7 +1,4 @@
 "use client"
-import Icons from "@/components/Icons/Icons";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import Menu from "./Menu";
 

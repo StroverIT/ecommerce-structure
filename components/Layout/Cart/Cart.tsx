@@ -29,7 +29,7 @@ import { adjustQty, removeFromCart } from "@/redux/actions/productActions";
 import { CartContext } from "@/components/Context/CartContext";
 
 
-const Cart= ({cart, removeFromCart,adjustQty}) => {
+const Cart= ({cart, removeFromCart,adjustQty}: {cart: any, removeFromCart: any, adjustQty: any}) => {
 
   const { cartMenu, setCartMenu }= useGlolContext();
 
@@ -38,8 +38,10 @@ const Cart= ({cart, removeFromCart,adjustQty}) => {
     const body = document.querySelector("body")
 
       if(cartMenu){
+        // @ts-ignore: Object is possibly 'null'.
         body.style.overflowY = "hidden"
       }else{
+        // @ts-ignore: Object is possibly 'null'.
         body.style.overflowY = "visible"
 
       }

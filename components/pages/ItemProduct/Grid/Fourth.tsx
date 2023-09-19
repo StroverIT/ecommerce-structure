@@ -11,7 +11,7 @@ import { addToCart } from "@/redux/actions/productActions";
 // Interfaces
 import ProductData from "@/interface/ProductData"
 
-const Fourth = ({product, itemName}) => {
+const Fourth = ({product, itemName}: {product: any, itemName: any}) => {
 
     const dispatch = useDispatch();
 

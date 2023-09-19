@@ -18,6 +18,7 @@ export const listOfItems = [
   "box",
   "user",
   "plusCircle",
+  "undefined"
 ] as const;
 
 export type InputIcons = {

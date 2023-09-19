@@ -3,7 +3,7 @@ import { useState } from "react"
 import Item from "./SubItem";
 import { usePathname } from "next/navigation";
 
-function SubMenu({ submenu, subMenuState, link}) {
+function SubMenu({ submenu, subMenuState, link}: { submenu : any, subMenuState: any, link: any}) {
 
 
   const pathname = usePathname()
@@ -12,7 +12,7 @@ function SubMenu({ submenu, subMenuState, link}) {
     <section className="relative">
       <div className="h-full w-[2px] bg-slate-300 absolute top-0 left-6"></div>
       <ul className="flex flex-col pt-4 pl-10 gap-y-5">
-        {submenu.map((item, index) => {
+        {submenu.map((item: any, index:any) => {
           
           
           const condition = pathname == link + item.link

@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 
 
-export default function MenuItem({submenu, link, name,subMenuState, subMenuSetState, condition }) {
+export default function MenuItem({submenu, link, name,subMenuState, subMenuSetState, condition }: {submenu: any, link: any, name: any,subMenuState: any, subMenuSetState: any, condition : any, }) {
    
 
   return (

@@ -1,6 +1,7 @@
+import { listOfItems } from "@/components/Icons/IconInterface"
 
 export interface ImageContainer {
-    icon?: string | ""
+    icon: (typeof listOfItems)[number]
     imageData?: {
         className: string
         url: string

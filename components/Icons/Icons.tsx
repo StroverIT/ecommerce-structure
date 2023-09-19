@@ -11,6 +11,7 @@ import { FaAddressBook } from "react-icons/fa"
 import { PiArrowCounterClockwiseBold } from "react-icons/pi"
 
 import {InputIcons} from "@/components/Icons/IconInterface"
+import { getValueOf } from "@/utils/helpers";
 
 interface IIconDictionary {
  [key: string]: React.ReactNode,
@@ -51,6 +52,3 @@ export default function Icons({ iconType }: InputIcons) {
   return getValueOf(iconDictionary, iconType)
 }
 
-function getValueOf(object: any, prop: string) {
-  return object[prop];
-}
