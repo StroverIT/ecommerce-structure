@@ -1,6 +1,5 @@
 import React from 'react';
 
-import GoogleInputs from '@/components/Inputs/GoogleInputs';
 import GlowBtn from '@/components/Buttons/GlowBtn/GlowBtn';
 import Icons from '@/components/Icons/Icons';
 
