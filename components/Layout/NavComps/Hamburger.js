@@ -12,7 +12,7 @@ const Hamburger = () => {
        <div className='flex items-center cursor-pointer lg:ml-4' onClick={()=> setHamburgerMenu(true)}>
            <Ham  toggled={toggled}  size={24}/>
            
-           <div className='text-lg font-semibold max-lg:hidden' >Каталог</div>
+           <div className='text-lg font-semibold max-lg:hidden' >Продукти</div>
        </div>
     );
 }

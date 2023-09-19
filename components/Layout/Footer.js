@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="border-t-[0.01px] border-gray-400 ">
+    <footer className="bg-neutral-200 ">
       <div className="container">
         <div className="grid justify-between gap-4 py-8 sm:grid-cols-2 md:flex">
             {/* Contacts */}
@@ -160,7 +160,7 @@ const Footer = () => {
           </section>
         </div>
       </div>
-      <section className="relative flex flex-col items-center justify-center py-6 bg-slate-100">
+      <section className="relative flex flex-col items-center justify-center py-6 bg-neutral-300">
         <div className="text-sm text-center text-gray-500">
           © 2022 `companyName`. Всички права запазени.
         </div>

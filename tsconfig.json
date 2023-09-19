@@ -22,11 +22,22 @@
     "paths": {
       "@/components/*": ["./components/*"],
       "@/context/*": ["./components/Context/*"],
-      "@/data/*": ["./data/*"]
+      "@/data/*": ["./data/*"],
+      "@/pages/*": ["./components/pages/*"],
+      "@/swiper/*": ["./components/Swipers/*"],
+      "@/utils/*": ["./utils/*"],
+      "@/API/*": ["./API/*"],
+      "@/db/*": ["./db/*"],
+      "@/models/*": ["./db/models/*"],
+      "@/redux/*": ["./GlobalRedux/*"],
+      "@/interface/*": ["./Interfaces/*"],
+
+
+
 
 
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/Icons/Icons.js"],
   "exclude": ["node_modules"]
 }

@@ -12,7 +12,8 @@ import Nav from "@/components/Layout/Nav"
 import Footer from "@/components/Layout/Footer"
 
 // --- Global Context
-import {GlobalContextProvider} from "@/context/Global"
+import { GlobalContextProvider } from "@/context/Global"
+import { Providers } from '@/redux/provider'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -28,13 +29,14 @@ export default function RootLayout({
     <html lang="en">
 
       <body  /* className={inter.className} */ className='bg-color' >
-      <GlobalContextProvider>
+        <Providers>
+          <GlobalContextProvider>
 
-        <Nav />
-        {children}
-        <Footer />
-        </GlobalContextProvider>
-
+            <Nav />
+            <div className='mt-20'>{children}</div>
+            <Footer />
+          </GlobalContextProvider>
+        </Providers>
       </body>
     </html>
   )

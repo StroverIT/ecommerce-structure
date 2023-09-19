@@ -11,3 +11,28 @@ What includes?
 2. Footer
 
 3. Homepage with 
+
+
+Mongodb Structure
+
+
+## Product
+
+
+sectionName: String
+imageUrl: String
+description: [String, String]
+itemUnit: String,
+totalBoughtProducts: Number starting from 0
+articles: {
+    articleName: String
+    items: {
+        weight: String,
+        price: Number,
+        boughts: Number starting from 0
+    }
+    totalItemBoughts: Number starting from 0
+}
+
+brand: brandSchema (Optional)
+
