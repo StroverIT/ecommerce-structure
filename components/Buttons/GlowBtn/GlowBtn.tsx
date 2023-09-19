@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import themeColors from "./Themes";
 import Icons from "@/components/Icons/Icons"
 
-import {InputIcons} from "@/components/Icons/IconInterface"
+import {InputIcons, listOfItems} from "@/components/Icons/IconInterface"
 
 type GlowBtn = {
   text: string
@@ -18,7 +18,7 @@ type GlowBtn = {
   color?: string
   isBg?: true | boolean
   isPos?: boolean
-  icon?: [InputIcons]
+  icon?: (typeof listOfItems)[number],
   classNameIcon?: string
   iconPos?: string
   classNameText?: string
