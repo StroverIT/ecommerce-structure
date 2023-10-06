@@ -23,7 +23,7 @@ const SideMenu = ({links}: ILinks) => {
       {
         links.map((data)=>{
           
-          return <Menu key={data.key} name={data.name}  link={data.link} submenu={data.submenu}/>
+          return <Menu key={data.link} name={data.name}  link={data.link} submenu={data.submenu}/>
         })
       }
         
