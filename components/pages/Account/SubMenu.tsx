@@ -1,7 +1,5 @@
 "use client";
-import { useState } from "react";
 import Item from "./SubItem";
-import { usePathname } from "next/navigation";
 
 function SubMenu({
   submenu,
