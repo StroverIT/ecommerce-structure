@@ -10,12 +10,12 @@ const mainLink = "/admin"
 const layoutLink = "/index"
 const imageDataList = {
     truck: {
-        className: "h-10 w-10 mr-2",
+        className: "h-6 w-6 mr-2",
         url: "truck.png",
         alt: "Няма още"
     },
     promotion: {
-        className: "h-10 w-10 mr-2",
+        className: "h-6 w-6 mr-2",
         url: "promotion.png",
         alt: "Няма още"
     }

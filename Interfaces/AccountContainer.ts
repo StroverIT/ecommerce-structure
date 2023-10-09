@@ -7,6 +7,7 @@ export interface IImageContainer {
         url: string
         alt: string
     }
+    size?: string
 }
 
 export interface IContainer extends IImageContainer {

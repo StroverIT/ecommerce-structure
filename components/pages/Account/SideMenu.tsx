@@ -7,6 +7,8 @@ type ListItem =  {
   name: string
   link: string
   key?: string
+  icon: string
+  imageData: string
   submenu? :{
     name: string
     link: string
@@ -22,8 +24,8 @@ const SideMenu = ({links}: ILinks) => {
       <ul className="sticky top-20">
       {
         links.map((data)=>{
-          
-          return <Menu key={data.link} name={data.name}  link={data.link} submenu={data.submenu}/>
+          // this must be fixed !!!
+          return <Menu key={data.link} name={data.name}  link={data.link} submenu={data.submenu} icon={data.icon} imageData={data.imageData}/>
         })
       }
         

@@ -24,6 +24,7 @@ export default function MenuItem({
   icon: any
   imageData: any
 }) {
+  
   return (
     <Link href={`${submenu ? "" : link}`}>
       <li
@@ -37,7 +38,7 @@ export default function MenuItem({
       >
         <section className="flex items-center justify-between">
           <section className="flex">
-             <ImageContainer icon={icon} imageData={imageData}/>
+             <ImageContainer size="text-xl" icon={icon} imageData={imageData}/>
             <div className={`pl-2`}>{name}</div>
           </section>
           {submenu && (
