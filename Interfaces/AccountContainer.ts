@@ -1,6 +1,6 @@
 import { listOfItems } from "@/components/Icons/IconInterface"
 
-export interface ImageContainer {
+export interface IImageContainer {
     icon: (typeof listOfItems)[number]
     imageData?: {
         className: string
@@ -9,7 +9,7 @@ export interface ImageContainer {
     }
 }
 
-export interface IContainer extends ImageContainer {
+export interface IContainer extends IImageContainer {
     text: string
     link?: string
     mainLink?: string

@@ -1,6 +1,9 @@
 import React from "react";
-import Icons from "@/components/Icons/Icons";
 import Link from "next/link";
+
+import ImageContainer from "@/components/Icons/ImageContainer"
+
+import Icons from "@/components/Icons/Icons";
 
 export default function MenuItem({
   submenu,
@@ -9,6 +12,8 @@ export default function MenuItem({
   subMenuState,
   subMenuSetState,
   condition,
+  icon,
+  imageData
 }: {
   submenu: any;
   link: any;
@@ -16,6 +21,8 @@ export default function MenuItem({
   subMenuState: any;
   subMenuSetState: any;
   condition: any;
+  icon: any
+  imageData: any
 }) {
   return (
     <Link href={`${submenu ? "" : link}`}>
@@ -30,9 +37,7 @@ export default function MenuItem({
       >
         <section className="flex items-center justify-between">
           <section className="flex">
-            <div className={`text-xl`}>
-              <Icons iconType="home" />
-            </div>
+             <ImageContainer icon={icon} imageData={imageData}/>
             <div className={`pl-2`}>{name}</div>
           </section>
           {submenu && (

@@ -8,6 +8,19 @@ type Layout = {
 
 const mainLink = "/admin"
 const layoutLink = "/index"
+const imageDataList = {
+    truck: {
+        className: "h-10 w-10 mr-2",
+        url: "truck.png",
+        alt: "Няма още"
+    },
+    promotion: {
+        className: "h-10 w-10 mr-2",
+        url: "promotion.png",
+        alt: "Няма още"
+    }
+
+}
 const sideMenuLinks = [
    
     // {
@@ -27,6 +40,8 @@ const sideMenuLinks = [
     {
         name: "Доставки",
         link: `${mainLink}${layoutLink}/deliveries`,
+        icon:"undefined",
+        imageData:imageDataList.truck,
         submenu: [
             {
                 name: "Виж всички",
@@ -52,6 +67,7 @@ const sideMenuLinks = [
     {
         name: "Продутки",
         link: `${mainLink}${layoutLink}/products`,
+        icon: "box",
         submenu: [
             {
                 name: "Виж всички",
@@ -65,17 +81,21 @@ const sideMenuLinks = [
     },
     {
         name: "Потребители",
-        link: `${mainLink}${layoutLink}/users`
+        link: `${mainLink}${layoutLink}/users`,
+        icon: 'user',
     },
     {
         name: "Промоции",
-        link: `${mainLink}${layoutLink}/promotions`
+        link: `${mainLink}${layoutLink}/promotions`,
+        icon: "settings"
     },
   
    
     {
         name: "Менюта",
         link: `${mainLink}`,
+        icon: "settings",
+
         submenu: [
             {
                 name: "Analytics",

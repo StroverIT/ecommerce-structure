@@ -2,9 +2,11 @@
 import Icons from '@/components/Icons/Icons'
 import Link from 'next/link'
 
+// Intefaces
+import { IContainer} from "@/interface/AccountContainer"
 
-import { IContainer, ImageContainer} from "@/interface/AccountContainer"
-import Image from 'next/image'
+// Components
+import ImageContaner from '../Icons/ImageContainer'
 
 function Container({ icon, text, link, imageData }: IContainer) {
     return (
@@ -23,10 +25,3 @@ function Container({ icon, text, link, imageData }: IContainer) {
 export default Container
 
 
-function ImageContaner({icon, imageData}: ImageContainer){
-    if(imageData?.className){
-        
-        return <div className={`${imageData.className} relative`}><Image src={`/icons/${imageData.url}`} fill alt={imageData.alt}/></div>
-    }
-    return <div className='pr-2 text-4xl'><Icons iconType={icon} /></div>
-}

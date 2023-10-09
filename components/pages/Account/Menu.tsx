@@ -21,6 +21,8 @@ const Menu = (props: any) => {
         submenu={props.submenu}
         link={props.link}
         name={props.name}
+        icon={props.icon}
+        imageData={props.imageData}
         subMenuSetState={subMenuSetState}
         subMenuState={subMenuState}
         condition={condition}
