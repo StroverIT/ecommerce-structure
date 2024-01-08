@@ -1,8 +1,19 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
+import type { Metadata } from 'next'
 
-const inter = Inter({ subsets: ['latin'] })
+// ! ---- This is fonts ---- !
+// import { Inter } from 'next/font/google'
+
+// const inter = Inter({ subsets: ['latin'] })
+// ! --- End of fonts ---- !
+
+// --- Layout
+import Nav from "@/components/Layout/Nav"
+import Footer from "@/components/Layout/Footer"
+
+// --- Global Context
+import { GlobalContextProvider } from "@/context/Global"
+import { Providers } from '@/redux/provider'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +27,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+
+      <body  /* className={inter.className} */ className='bg-color' >
+        <Providers>
+          <GlobalContextProvider>
+
+            <Nav />
+            <div className='mt-20'>{children}</div>
+            <Footer />
+          </GlobalContextProvider>
+        </Providers>
+      </body>
     </html>
   )
 }
